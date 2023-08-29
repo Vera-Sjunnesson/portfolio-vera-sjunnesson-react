@@ -1,0 +1,44 @@
+@import url("./satoshi.css");
+@import url("./eb-garamond.css");
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Variables*/
+:root {
+  /*Colors:*/
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+
+  --primary-headline-color: #f52908;
+  --secondary-headline-color: #565656;
+
+  --primary-container-color: #FCEDEA;
+  --secondary-container-color: #febfcb;
+  
+  --button-color: #F5F5F5;
+
+  --primary-button-hover-color: #f67a56;
+  --secondary-button-hover-color: #0B24F5;
+  --tertiary-button-hover-color: #FFD338; 
+ 
+  --icon-color: #D0D0D0;
+  
+  --icon-hover-color: #000000;   
+
+  /*fonts */
+  --primary-font-family: 'Satoshi-Variable', sans-serif;
+  --secondary-font-family: 'EB-Garamond, sans-serif'
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

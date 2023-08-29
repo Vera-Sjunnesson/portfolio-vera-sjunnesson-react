@@ -1,9 +1,16 @@
 import React from 'react'
+import { GlobalStyles } from 'components/lib/GlobalStyles'
+import { Header } from 'components/pages/header/Header'
+import { Tech } from 'components/pages/tech/Tech'
+import { Projects } from 'components/pages/projects/Projects'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <GlobalStyles />
+      <Header />
+      <Tech />
+      <Projects />
+    </>
   )
 }
