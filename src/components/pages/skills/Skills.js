@@ -15,7 +15,7 @@ export const Skills = ({ skillsRef }) => {
         <SkillsContainer>
           <SkillList
             skillTitle="Code"
-            inputColor="var(--primary-button-hover-color)"
+            inputColor="#94b647"
             skillItems={[
               { key: 1, text: 'HTML5' },
               { key: 2, text: 'CSS3' },
@@ -30,7 +30,7 @@ export const Skills = ({ skillsRef }) => {
             ]} />
           <SkillList
             skillTitle="Toolbox"
-            inputColor="#2483E0"
+            inputColor="#ffba1d"
             skillItems={[
               { key: 11, text: 'Git' },
               { key: 12, text: 'VSCode' },
@@ -42,7 +42,7 @@ export const Skills = ({ skillsRef }) => {
             ]} />
           <SkillList
             skillTitle="More"
-            inputColor="#0B24F5"
+            inputColor="#b2cee5"
             skillItems={[
               { key: 18, text: 'Web Accessibility' },
               { key: 19, text: 'Agile methodology' },
@@ -53,7 +53,7 @@ export const Skills = ({ skillsRef }) => {
             ]} />
           <SkillList
             skillTitle="Upcoming"
-            inputColor="#1d8e4a"
+            inputColor="#febfcb"
             skillItems={[
               { key: 24, text: 'TypeScript' },
               { key: 25, text: 'Angular' }

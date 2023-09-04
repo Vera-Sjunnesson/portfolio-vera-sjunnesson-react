@@ -27,6 +27,7 @@ export const TechSection = styled.section`
 
 export const TechHeading = styled.h4`
     font-size: 80px;
+    color: var(--primary-color)
 `
 
 export const TechText = styled.p`
@@ -52,13 +53,13 @@ export const MarkGreen = styled.mark`
     padding-left: 2px;
     padding-right:0px;
     padding-bottom: 1px;
-    background-color: #1d8e4a;
+    background-color: #94b647;
 `;
 
 export const MarkRed = styled(MarkGreen)`
-    background-color: var(--primary-headline-color);
+    background-color: #ffba1d;
 `;
 
 export const MarkBlue = styled(MarkGreen)`
-    background-color: #2483E0;
+    background-color: #b2cee5;
 `;

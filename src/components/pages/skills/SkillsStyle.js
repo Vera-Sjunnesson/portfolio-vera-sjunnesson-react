@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 
 export const SkillSection = styled.section`
-    background-color: var(--secondary-container-color);
+    background-color: #f85f36;
     padding: 64px 93.5px 90px 93.5px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
@@ -30,6 +30,7 @@ export const SkillsHeader = styled.h4`
     margin-bottom: 64px;
     line-height: 108px;
     text-align: center;
+    color: var(--primary-color);
 
   @media (min-width: 744px) and (max-width: 1280px) {
     text-align: center;

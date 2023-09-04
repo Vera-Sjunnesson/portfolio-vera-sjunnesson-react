@@ -31,7 +31,7 @@ export const ArrowButton = ({ handleScrollToNextSection, atBottom }) => {
     <ArrowButtonStyled
       type="button"
       onClick={handleScrollToNextSection}>
-      <img style={{ transform: atBottom ? 'rotate(-180deg)' : '' }} src={`${process.env.PUBLIC_URL}/assets/arrow-red-small.svg`} alt="arrow icon" />
+      <img style={{ transform: atBottom ? 'rotate(-180deg)' : '', color: '#f85f36' }} src={`${process.env.PUBLIC_URL}/assets/arrow-red-small.svg`} alt="arrow icon" />
     </ArrowButtonStyled>
   )
 }

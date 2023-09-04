@@ -19,7 +19,7 @@ export const ListHeading = styled.h6`
     line-height: 32.4px;
     width: fit-content;
     padding: 2px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     background-color: ${(props) => props.$inputcolor || '#BF4F74'};
 }
 `
