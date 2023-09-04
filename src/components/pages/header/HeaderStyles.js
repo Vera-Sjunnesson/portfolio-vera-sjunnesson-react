@@ -9,6 +9,7 @@ export const HeaderWrap = styled.header`
   padding-bottom: 0;
   margin-bottom: 50px;
   position: relative;
+  background-color: var(--primary-color);
 
   @media (min-width: 744px) and (max-width: 1280px) {
     padding: 0;
@@ -29,13 +30,15 @@ export const HeaderWrap = styled.header`
 export const HeaderTextBlock = styled.div`
 
   display: contents;
+  z-index: 1001;
+  background-color: transparent;
+
 
   @media (min-width: 744px) and (max-width: 1280px) {
     display: block;
     width: 100%;
     height: 744px;
     position: relative;
-    background-color: var(--primary-color);
   }
 
   @media (min-width: 1280px) {
@@ -43,7 +46,6 @@ export const HeaderTextBlock = styled.div`
     width: 50%;
     height: 100%;
     position: relative;
-    background-color: var(--primary-color);
   }
 `
 
@@ -80,7 +82,6 @@ export const PresentationCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1000;
   }
 
   @media (min-width: 1280px) {

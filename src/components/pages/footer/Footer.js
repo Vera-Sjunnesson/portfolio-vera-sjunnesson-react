@@ -8,7 +8,7 @@ import { FooterSection, FooterHeader, FooterContainer, FooterAddress, EmailButto
 
 export const Footer = ({ footerRef, setDownButton }) => {
   const handleEmailClick = () => {
-    window.location.href = 'mailto:vera.kastruo@gmail.com';
+    window.location.href = 'mailto:vera.kastrup@gmail.com';
   }
 
   const handleScroll = (e) => {

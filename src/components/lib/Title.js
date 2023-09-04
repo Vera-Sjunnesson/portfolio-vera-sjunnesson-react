@@ -8,9 +8,9 @@ export const Title = () => {
         <PortraitImg src={`${process.env.PUBLIC_URL}/images/vera-profile-picture.png`} alt="Image of Vera Sjunnesson" />
       </PortraitCard>
       <HeaderTitles>
-        <h1>Vera Sjunnesson</h1>
-        <h2>Frontend developer</h2>
-        <h3>+ digital designer</h3>
+        <h1><span>Vera Sjunnesson</span></h1>
+        <h2><span>Frontend developer</span></h2>
+        <h3><span>+ digital designer</span></h3>
       </HeaderTitles>
     </TitleCard>
   )

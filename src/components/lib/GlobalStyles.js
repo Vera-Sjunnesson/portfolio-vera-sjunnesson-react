@@ -7,7 +7,6 @@ body, html {
     block-size: fit-content;
     height: 100%;
     overscroll-behavior: none;
-}
 
 h1 {
     font-weight: 700;
@@ -29,6 +28,14 @@ h3 {
     line-height: 32.4px;
     color: var(--secondary-headline-color);
 }
+
+h1 span, h2 span, h3 span {
+    background-color: var(--primary-color);
+    padding: 0px 7px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
 
 h4 {
     font-weight: 700;

@@ -3,13 +3,6 @@ import { Fade } from 'react-awesome-reveal';
 import { TechSection, TechHeading, TechText, MarkGreen, MarkRed, MarkBlue } from './TechStyles'
 
 export const Tech = ({ techRef }) => {
-/*   useEffect(() => {
-    console.log(techRef.current)
-    if (techRef.current) {
-      setCurrentSection(1)
-    }
-  }, [setCurrentSection, techRef]) */
-
   return (
     <TechSection ref={techRef}>
       <Fade
