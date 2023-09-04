@@ -1,10 +1,43 @@
 import React from 'react'
+import styled from 'styled-components/macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { SocialMediaCard, StyledFontAwesomeIcon } from '../pages/header/HeaderStyles'
 
-export const SocialMedia = () => {
+export const SocialMediaCard = styled.div`
+  display: inline-flex;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media (min-width: 744px) and (max-width: 1280px) {
+    width: 288px;
+    margin-left: 40px;
+    margin-bottom: 58px;
+    ${(props) => props.$center && 'justify-content: center;'}
+    margin-left: ${(props) => (props.$center ? '0px' : '40px')}
+  }
+
+  @media (min-width: 1280px) {
+    width: 288px;
+    margin-left: 40px;
+    margin-bottom: 58px;
+    ${(props) => props.$center && 'justify-content: center;'}
+    margin-left: ${(props) => (props.$center ? '0px' : '40px')}
+  }
+`
+
+export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  color: var(--icon-color);
+  font-size: 30px;
+
+  &:hover {
+    color: var(--icon-hover-color)
+  }
+`;
+
+export const SocialMedia = ({ footer }) => {
   return (
-    <SocialMediaCard>
+    <SocialMediaCard $center={footer}>
       <a
         href="https://www.linkedin.com/in/vera-sjunnesson-8a546a169/"
         target="_blank"

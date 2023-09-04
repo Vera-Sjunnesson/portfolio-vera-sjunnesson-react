@@ -1,15 +1,12 @@
 import { createGlobalStyle } from 'styled-components/macro';
 
 export const GlobalStyles = createGlobalStyle`
-*, html {
-    scroll-behavior: smooth !important;
-}
 
 body, html {
     font-family: var(--primary-font-family);
     block-size: fit-content;
     height: 100%;
-    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 h1 {

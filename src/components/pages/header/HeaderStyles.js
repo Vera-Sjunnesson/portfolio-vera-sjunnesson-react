@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const HeaderWrap = styled.header`
   display: flex;
@@ -8,20 +7,22 @@ export const HeaderWrap = styled.header`
   padding: 0px;
   padding: 58px 24px;
   padding-bottom: 0;
+  margin-bottom: 50px;
+  position: relative;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     padding: 0;
     width: 100%;
-    height: 1240px;
     gap: 0;
     justify-content: flex-start;
-    position: relative;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1280px) {
     padding: 0;
     flex-direction: row;
     height: 100vh;
+    margin-bottom: 0;
   }
 `
 
@@ -32,7 +33,7 @@ export const HeaderTextBlock = styled.div`
   @media (min-width: 744px) and (max-width: 1280px) {
     display: block;
     width: 100%;
-    height: 60%;
+    height: 744px;
     position: relative;
     background-color: var(--primary-color);
   }
@@ -52,7 +53,7 @@ export const HeaderImgBlock = styled.div`
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 100%;
-    height: 40%;
+    height: 496px;
   }
 
   @media (min-width: 1280px) {
@@ -72,13 +73,14 @@ export const PresentationCard = styled.div`
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 540px;
-    height: 431px;
+    height: 567px;
     position: absolute;
-    left: calc(45% - 540px/2);
-    top: calc(50% - 431px/2);
+    left: calc(50% - 540px/2);
+    top: calc(50% - 567px/2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1000;
   }
 
   @media (min-width: 1280px) {
@@ -167,31 +169,3 @@ export const HeaderText = styled.p`
     align-self: flex-end;
   }
 `
-
-export const SocialMediaCard = styled.div`
-  display: inline-flex;
-  gap: 30px;
-  width: 100%;
-  margin-bottom: 30px;
-
-  @media (min-width: 744px) and (max-width: 1280px) {
-    width: 288px;
-    margin-left: 40px;
-    margin-bottom: 58px;
-  }
-
-  @media (min-width: 1280px) {
-    width: 288px;
-    margin-left: 40px;
-    margin-bottom: 58px;
-  }
-`
-
-export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: var(--icon-color);
-  font-size: 30px;
-
-  &:hover {
-    color: var(--icon-hover-color)
-  }
-`;
