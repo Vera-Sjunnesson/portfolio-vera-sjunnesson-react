@@ -70,6 +70,7 @@ export const FooterAddress = styled.address`
 `
 
 export const EmailButton = styled.button`
+    font-family: 'Satoshi-Bold', sans-serif;
     margin-bottom: 10px;
     &:hover {
         background-color: var(--tertiary-button-hover-color);
@@ -79,7 +80,7 @@ export const EmailButton = styled.button`
 
 export const PhoneNumber = styled.p`
     font-family: var(--primary-font-family);
-    font-weight: 500;
+    font-family: 'Satoshi-Bold', sans-serif;
     font-size: 20px;
     line-height: 27px;
     padding: 10.5px 16px 10.5px 10px;

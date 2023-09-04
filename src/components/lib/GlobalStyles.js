@@ -7,57 +7,62 @@ body, html {
     block-size: fit-content;
     height: 100%;
     overscroll-behavior: none;
-
-h1 {
-    font-weight: 700;
+}
+  
+  h1 {
+    font-family: 'Satoshi-Bold', sans-serif;
     font-size: 28px;
     line-height: 37.8px;
     color: var(--primary-headline-color);
-}
-
-h2 {
-    font-weight: 900;
+  }
+  
+  h2 {
+    font-family: 'Satoshi-Black', sans-serif;
     font-size: 32px;
     line-height: 43.2px;
     color: var(--primary-text-color);
-}
-
-h3 {
-    font-weight: 500;
+  }
+  
+  h3 {
+    font-family: 'Satoshi-Medium', sans-serif;
     font-size: 24px;
     line-height: 32.4px;
     color: var(--secondary-headline-color);
-}
-
-h1 span, h2 span, h3 span {
+  }
+  
+  h1 span, h2 span, h3 span {
     background-color: var(--primary-color);
     padding: 0px 7px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-}
-
-
-h4 {
-    font-weight: 700;
+  }
+  
+  h4 {
+    font-family: 'Satoshi-Black', sans-serif;
     font-size: 72px;
     line-height: 80px;
-    color: var(--primary-headline-color)
-}
+    color: var(--primary-headline-color);
 
-h5 {
-    font-weight: 900;
+    @media (min-width: 744px) {
+        font-size: 80px;
+    }
+  }
+
+  h5 {
+    font-family: 'Satoshi-Black', sans-serif;
     font-size: 32px;
     line-height: 43.2px;
-}
-
-p {
+  }
+  
+  p {
     font-family: var(--secondary-font-family);
     font-weight: 400;
     font-size: 22px;
     line-height: 28.71px;
-}
+  }
 
 button {
+    font-family: 'Satoshi-Medium', sans-serif;
     border-radius: 40px;
     border: none;
     font-weight: 500;

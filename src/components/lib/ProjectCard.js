@@ -109,9 +109,9 @@ export const TechList = styled.ul`
 `
 
 export const TechItem = styled.li`
+  font-family: 'Satoshi-Medium', sans-serif;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  font-weight: 500;
   font-size: 16px;
   line-height: 21.6px;
   padding: 2px 6px;
@@ -149,6 +149,7 @@ export const ShowMoreButton = styled.button`
   background-color: #f5f5f5;
   padding: 2px 6px;
   font-family: var(--secondary-font-family);
+  font-weight: 400;
   font-size: 20px;
   line-height: 21.6px;
   border-radius: 0px;
@@ -158,6 +159,10 @@ export const ShowMoreButton = styled.button`
     background-color: #ebebeb;
   }
 `
+
+export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  font-size: 30px;
+`;
 
 export const ProjectCard = ({
   imgSource,
@@ -224,8 +229,8 @@ export const ProjectCard = ({
             </TechList>
           </TextCard>
           <ProjectButtons>
-            <ProjectButton $github type="button" onClick={() => window.open(githubLink)}><FontAwesomeIcon icon={faGithub} aria-hidden="true" />View the code</ProjectButton>
-            <ProjectButton type="button" onClick={() => window.open(liveLink)}><FontAwesomeIcon icon={faGlobe} aria-hidden="true" />Live demo</ProjectButton>
+            <ProjectButton $github type="button" onClick={() => window.open(githubLink)}><StyledFontAwesomeIcon icon={faGithub} aria-hidden="true" />View the code</ProjectButton>
+            <ProjectButton type="button" onClick={() => window.open(liveLink)}><StyledFontAwesomeIcon icon={faGlobe} aria-hidden="true" />Live demo</ProjectButton>
           </ProjectButtons>
         </TextWrapper>
       </Article>

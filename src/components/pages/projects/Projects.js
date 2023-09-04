@@ -78,7 +78,7 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/movie-globe-02.png`}
           imgAlt="Laptop displaying Movie Globe app"
-          projectTitle="TheMovie Globe - Backend and frontend"
+          projectTitle="The Movie Globe - Backend and frontend"
           projectDescription="An interactive movie map that lets the user travel the world through movie locations. Each pin represent a location of a key scene from a movie in our curated database.  New locations can be added, commented on and saved by registered users. Backend and frontend work in this collaboration with Jonas Jakobson."
           listItems={[
             { key: 1, text: 'React' },

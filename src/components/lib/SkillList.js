@@ -14,7 +14,7 @@ export const SkillSection = styled.section`
 `
 
 export const ListHeading = styled.h6`
-    font-weight: 700;
+    font-family: 'Satoshi-Bold', sans-serif;
     font-size: 24px;
     line-height: 32.4px;
     width: fit-content;

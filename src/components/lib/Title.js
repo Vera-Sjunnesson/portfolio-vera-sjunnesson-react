@@ -1,5 +1,11 @@
 import React from 'react'
+import styled from 'styled-components/macro';
 import { TitleCard, PortraitCard, PortraitImg, HeaderTitles } from 'components/pages/header/HeaderStyles'
+
+export const Spanh3 = styled.span`
+  font-weight: 400;
+}
+`
 
 export const Title = () => {
   return (
@@ -10,7 +16,7 @@ export const Title = () => {
       <HeaderTitles>
         <h1><span>Vera Sjunnesson</span></h1>
         <h2><span>Frontend developer</span></h2>
-        <h3><span>+ digital designer</span></h3>
+        <h3><Spanh3>+ digital designer</Spanh3></h3>
       </HeaderTitles>
     </TitleCard>
   )

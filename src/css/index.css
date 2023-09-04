@@ -1,16 +1,6 @@
 @import url("./satoshi.css");
 @import url("./eb-garamond.css");
 
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /*Variables*/
 :root {
   /*Colors:*/
@@ -34,8 +24,17 @@ body {
   --icon-hover-color: #000000;   
 
   /*fonts */
-  --primary-font-family: 'Satoshi-Variable', sans-serif;
-  --secondary-font-family: 'EB-Garamond, sans-serif'
+  --primary-font-family: 'Satoshi', sans-serif;
+  --secondary-font-family: 'EB-Garamond', sans-serif
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
