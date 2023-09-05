@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 export const SkillSection = styled.section`
     background-color: #f85f36;
-    padding: 64px 93.5px 90px 93.5px;
+    padding: 64px 0px 90px 0px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     display: flex;
