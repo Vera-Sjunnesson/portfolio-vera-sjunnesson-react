@@ -140,6 +140,15 @@ export const ProjectButtons = styled.div`
 export const ProjectButton = styled.button`
   background-color: var(--button-color);
   color: #333333;
+  width: ${(props) => (props.$github ? '200px' : '')};
+
+  @media (min-width: 744px) and (max-width: 1280px) {
+    width: fit-content;
+  }
+  
+  @media (min-width: 1280px) {
+    width: fit-content;
+  }
 
   &:hover {
     background-color: ${(props) => (props.$github ? '#94b647' : '#b2cee5')};
