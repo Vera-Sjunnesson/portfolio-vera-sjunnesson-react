@@ -201,7 +201,14 @@ export const ProjectCard = ({
     });
     resizeObserver.observe(descriptionRef.current);
     return () => resizeObserver.disconnect(); // clean up
-  }, [isMobile, longText]);
+  }, [descriptionRef, isMobile, longText]);
+
+  useEffect(() => {
+    if (longText && descriptionRef.current.scrollHeight < 90) {
+      setLongText(false);
+      setShowText(false);
+    }
+  }, [longText]);
 
   const toggleText = () => {
     setShowText(!showText);
