@@ -2,6 +2,7 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { ProjectCard } from 'components/lib/ProjectCard'
 import { LineBackground } from 'components/lib/LineBackground';
+import { LineBackgroundBottom } from 'components/lib/LineBackgroundBottom';
 import { Fade } from 'react-awesome-reveal';
 import { ProjectSection, ProjectHeading, ProjectsWrapper } from './ProjectStyles'
 
@@ -9,7 +10,12 @@ export const Projects = ({ projectsRef }) => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
   return (
     <ProjectSection ref={projectsRef}>
-      {isDesktop && (<LineBackground />)}
+      {isDesktop && (
+        <>
+          <LineBackgroundBottom />
+          <LineBackground />
+        </>
+      )}
       <Fade
         duration={2000}>
         <ProjectHeading>
