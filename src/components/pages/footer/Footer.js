@@ -6,24 +6,14 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { SocialMedia } from 'components/lib/SocialMedia'
 import { FooterSection, FooterHeader, FooterContainer, FooterAddress, EmailButton, PhoneNumber } from './FooterStyle'
 
-export const Footer = ({ footerRef, setDownButton }) => {
+export const Footer = ({ footerRef }) => {
   const handleEmailClick = () => {
     window.location.href = 'mailto:vera.kastrup@gmail.com';
   }
 
-  const handleScroll = (e) => {
-    const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
-    console.log(bottom)
-    if (bottom) {
-      console.log('bottom')
-      setDownButton(false)
-    }
-  }
-
-  /*   window.addEventListener('scroll', handleScroll); */
-
   return (
-    <FooterSection ref={footerRef} onScroll={handleScroll}>
+    <FooterSection
+      ref={footerRef}>
       <Fade
         duration={2000}>
         <FooterHeader>

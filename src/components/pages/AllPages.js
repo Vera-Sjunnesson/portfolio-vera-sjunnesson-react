@@ -56,7 +56,6 @@ export const AllPages = () => {
     // closestIndex now contains the index of the ref with the closest rect.top to 0
     if (closestIndex !== -1 && closestIndex < 4) {
       setIsOnScreen(closestIndex);
-      console.log('closestIndex', closestIndex);
       window.scrollTo({
         top: sectionsRefs[closestIndex + 1].current.offsetTop,
         behavior: 'smooth'

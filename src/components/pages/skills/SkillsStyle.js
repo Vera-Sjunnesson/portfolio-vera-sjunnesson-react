@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
 
 export const SkillSection = styled.section`
-    background-color: #f85f36;
-    padding: 64px 0px 90px 0px;
+  background-color: var(--secondary-container-color);
+  padding: 64px 0px 90px 0px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     display: flex;
@@ -26,11 +26,11 @@ export const SkillSection = styled.section`
 `
 
 export const SkillsHeader = styled.h4`
-    font-size: 80px;
-    margin-bottom: 64px;
-    line-height: 108px;
-    text-align: center;
-    color: var(--primary-color);
+  font-size: 80px;
+  margin-bottom: 64px;
+  line-height: 108px;
+  text-align: center;
+  color: var(--primary-color);
 
   @media (min-width: 744px) and (max-width: 1280px) {
     text-align: center;
@@ -43,10 +43,10 @@ export const SkillsHeader = styled.h4`
 `
 
 export const SkillsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 66px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  align-items: center;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     flex-flow: row wrap;

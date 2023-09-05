@@ -11,10 +11,14 @@ export const Header = ({ headerRef }) => {
 
   return (
     <HeaderWrap ref={headerRef}>
-      {isDesktop && (<LineAnimation />)}
+      {isDesktop && (
+        <LineAnimation />
+      )}
       {isTablet && (
         <HeaderImgBlock>
-          <HeaderFeatureImg src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`} alt="abstract sun" />
+          <HeaderFeatureImg
+            src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`}
+            alt="abstract sun" />
         </HeaderImgBlock>
       )}
       <HeaderTextBlock>
@@ -37,7 +41,9 @@ export const Header = ({ headerRef }) => {
       </HeaderTextBlock>
       {isDesktop && (
         <HeaderImgBlock>
-          <HeaderFeatureImg src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`} alt="abstract sun" />
+          <HeaderFeatureImg
+            src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`}
+            alt="abstract sun" />
         </HeaderImgBlock>
       )}
     </HeaderWrap>

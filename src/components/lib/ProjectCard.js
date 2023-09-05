@@ -47,20 +47,20 @@ export const ImgContainer = styled.div`
 export const TextWrapper = styled.div`
   display: contents;
 
-@media (min-width: 744px) and (max-width: 1280px) {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 100%;
-}
+  @media (min-width: 744px) and (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
 
-@media (min-width: 1280px) {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: #fffdfb;
-  padding: 0px 10px;
-}
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+    padding: 0px 10px;
+  }
 `
 
 export const TextCard = styled.div`
@@ -68,39 +68,39 @@ export const TextCard = styled.div`
   flex-direction: column;
   gap: 18px;
 
-@media (min-width: 744px) and (max-width: 1280px) {
-  display: contents;
-}
+  @media (min-width: 744px) and (max-width: 1280px) {
+    display: contents;
+  }
 
-@media (min-width: 1280px) {
-  display: contents;
-}
+  @media (min-width: 1280px) {
+    display: contents;
+  }
 `
 
 export const Description = styled.p`
 
-@media (min-width: 744px) and (max-width: 1280px) {
-  display: -webkit-box;
-  -webkit-line-clamp: ${(props) => (props.$long ? '8' : '3')};
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  @media (min-width: 744px) and (max-width: 1280px) {
+    display: -webkit-box;
+    -webkit-line-clamp: ${(props) => (props.$long ? '8' : '3')};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-@media (min-width: 1280px) {
-  display: -webkit-box;
-  -webkit-line-clamp: ${(props) => (props.$long ? '8' : '3')};
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-`;
+  @media (min-width: 1280px) {
+    display: -webkit-box;
+    -webkit-line-clamp: ${(props) => (props.$long ? '8' : '3')};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`
 
 export const Header = styled.h5`
 
-@media (min-width: 744px) {
-  margin-bottom: 12px;
-}
+  @media (min-width: 744px) {
+    margin-bottom: 12px;
+  }
 `
 
 export const TechList = styled.ul`
@@ -124,17 +124,17 @@ export const TechItem = styled.li`
 export const ProjectButtons = styled.div`
   display: contents;
 
-@media (min-width: 744px) and (max-width: 1280px) {
-  display: flex;
-  margin-top: 15px;
-  gap:24px;
-}
+  @media (min-width: 744px) and (max-width: 1280px) {
+    display: flex;
+    margin-top: 15px;
+    gap:24px;
+  }
 
-@media (min-width: 1280px) {
-  display: flex;
-  margin-top: 15px;
-  gap: 24px;
-}
+  @media (min-width: 1280px) {
+    display: flex;
+    margin-top: 15px;
+    gap: 24px;
+  }
 `
 
 export const ProjectButton = styled.button`
@@ -151,7 +151,7 @@ export const ProjectButton = styled.button`
   }
 
   &:hover {
-    background-color: ${(props) => (props.$github ? '#94b647' : '#b2cee5')};
+    background-color: ${(props) => (props.$github ? 'var(--primary-button-hover-color)' : 'var(--secondary-button-hover-color)')};
   }
 `
 
@@ -172,7 +172,7 @@ export const ShowMoreButton = styled.button`
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   font-size: 30px;
-`;
+`
 
 export const ProjectCard = ({
   imgSource,
@@ -214,7 +214,9 @@ export const ProjectCard = ({
       duration={2000}>
       <Article>
         <ImgContainer>
-          <ArticleImg src={imgSource} alt={imgAlt} />
+          <ArticleImg
+            src={imgSource}
+            alt={imgAlt} />
         </ImgContainer>
         <TextWrapper>
           <TextCard>
@@ -234,13 +236,30 @@ export const ProjectCard = ({
             )}
             <TechList>
               {listItems.map((item) => (
-                <TechItem key={item.key}>{item.text}</TechItem>
+                <TechItem key={item.key}>
+                  {item.text}
+                </TechItem>
               ))}
             </TechList>
           </TextCard>
           <ProjectButtons>
-            <ProjectButton $github type="button" onClick={() => window.open(githubLink)}><StyledFontAwesomeIcon icon={faGithub} aria-hidden="true" />View the code</ProjectButton>
-            <ProjectButton type="button" onClick={() => window.open(liveLink)}><StyledFontAwesomeIcon icon={faGlobe} aria-hidden="true" />Live demo</ProjectButton>
+            <ProjectButton
+              $github
+              type="button"
+              onClick={() => window.open(githubLink)}>
+              <StyledFontAwesomeIcon
+                icon={faGithub}
+                aria-hidden="true" />
+                View the code
+            </ProjectButton>
+            <ProjectButton
+              type="button"
+              onClick={() => window.open(liveLink)}>
+              <StyledFontAwesomeIcon
+                icon={faGlobe}
+                aria-hidden="true" />
+                Live demo
+            </ProjectButton>
           </ProjectButtons>
         </TextWrapper>
       </Article>

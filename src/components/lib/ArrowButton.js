@@ -15,7 +15,7 @@ export const ArrowButtonStyled = styled.button`
   margin: auto;
   z-index: 999;
   padding: 0px;
-  background: #fffdfb;
+  background-color: var(--primary-color);
   box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.50);
   z-index: 1001;
 
@@ -35,7 +35,12 @@ export const ArrowButton = ({ handleScrollToNextSection, atBottom }) => {
     <ArrowButtonStyled
       type="button"
       onClick={handleScrollToNextSection}>
-      <img style={{ transform: atBottom ? 'rotate(-180deg)' : '', color: '#f85f36' }} src={`${process.env.PUBLIC_URL}/assets/arrow-red-small.svg`} alt="arrow icon" />
+      <img
+        style={{
+          transform: atBottom ? 'rotate(-180deg)' : '', color: '#f85f36'
+        }}
+        src={`${process.env.PUBLIC_URL}/assets/arrow-red-small.svg`}
+        alt="arrow icon" />
     </ArrowButtonStyled>
   )
 }

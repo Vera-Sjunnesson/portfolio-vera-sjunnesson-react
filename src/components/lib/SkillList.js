@@ -8,10 +8,10 @@ export const SkillSection = styled.section`
     gap: 19px;
     width: 200px;
 
-@media (min-width: 744px) {
+  @media (min-width: 744px) {
     align-items: flex-start;
     gap: 9px;
-}
+  }
 `
 
 export const ListHeading = styled.h6`
@@ -22,7 +22,6 @@ export const ListHeading = styled.h6`
     padding: 2px;
     color: var(--secondary-color);
     background-color: ${(props) => props.$inputcolor || '#BF4F74'};
-}
 `
 
 export const SkillItem = styled.li`
@@ -37,12 +36,12 @@ export const SkillItem = styled.li`
   }
 `
 export const SkillItemSpan = styled.span`
-    @media (min-width: 744px) {
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-      background: #fffdfb;
-      padding: 0px 5px 5px 5px;
-    }
+  @media (min-width: 744px) {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: #fffdfb;
+    padding: 0px 5px 5px 5px;
+  }
 `
 
 export const SkillList = ({ skillTitle, inputColor, skillItems = [] }) => {
@@ -53,7 +52,11 @@ export const SkillList = ({ skillTitle, inputColor, skillItems = [] }) => {
       </ListHeading>
       <ul>
         {skillItems.map((skillItem) => (
-          <SkillItem key={skillItem.key}><SkillItemSpan>{skillItem.text}</SkillItemSpan></SkillItem>
+          <SkillItem key={skillItem.key}>
+            <SkillItemSpan>
+              {skillItem.text}
+            </SkillItemSpan>
+          </SkillItem>
         ))}
       </ul>
     </SkillSection>

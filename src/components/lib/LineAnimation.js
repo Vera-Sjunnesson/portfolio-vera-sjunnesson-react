@@ -1,14 +1,24 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { useMediaQuery } from 'react-responsive'
 
 const transition = { duration: 4, yoyo: Infinity, ease: 'easeInOut' }
 
 export const LineAnimation = () => {
-  const isTablet = useMediaQuery({ minWidth: 774, maxWidth: 1280 })
   return (
-    <div style={{ position: 'absolute', top: isTablet ? 'auto' : '0px', bottom: !isTablet ? 'auto' : '0px', right: '0px', zIndex: '999' }}>
-      <svg width="1085" height="1013" viewBox="0 0 1085 1013" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div
+      style={{
+        position: 'absolute',
+        top: '0px',
+        bottom: '0px',
+        right: '0px',
+        zIndex: '999'
+      }}>
+      <svg
+        width="1085"
+        height="1013"
+        viewBox="0 0 1085 1013"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_1076_506)">
           <motion.path
             d="M27.7002 -15.9004C29.4002 -13.3004 31.1002 -10.6004 32.7002 -7.90039C69.2002 55.4996 43.5002 118.7 107.2 182.8C146.2 222 217.1 256.3 292.6 255.1C362.6 254 393.9 210 451.8 230.3C455.2 231.5 492.8 245.3 512.6 281.7C542 335.6 499.9 379.3 528 419.1C548.4 448 594.9 459.8 629 450C683 434.4 682.4 373.5 725.7 367.3C767.7 361.3 824.6 407.6 830.8 464C834.5 498.1 819.8 535.8 791.5 557.9C738.4 599.4 679 553.3 633.1 592.9C602.9 619 593.8 669.1 607.9 709.2C623.6 754.1 668.5 787.6 708.8 784.9C744 782.6 749.9 754.5 809.7 707.8C856.1 671.6 917 623.3 973.7 639.1C1007.5 648.5 1035.8 679.6 1043.8 713.4C1053.3 754 1031.1 789.1 1017.4 810.8C975.9 876.4 927.7 874 906.4 922.2C896.3 945.1 890.7 982.6 919 1044.2C927.6 1061 936.2 1077.8 944.9 1094.6"
@@ -29,7 +39,10 @@ export const LineAnimation = () => {
         </g>
         <defs>
           <clipPath id="clip0_1076_506">
-            <rect width="1084.6" height="1012.7" fill="white" />
+            <rect
+              width="1084.6"
+              height="1012.7"
+              fill="white" />
           </clipPath>
         </defs>
       </svg>

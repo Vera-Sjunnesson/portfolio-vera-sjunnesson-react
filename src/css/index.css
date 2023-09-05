@@ -4,7 +4,7 @@
 /*Variables*/
 :root {
   /*Colors:*/
-  --primary-color: #FFFFFF;
+  --primary-color: #fffdfb;
   --secondary-color: #000000;
 
   --primary-headline-color: #f34e21;
@@ -15,11 +15,11 @@
   
   --button-color: #F5F5F5;
 
-  --primary-button-hover-color: #f67a56;
-  --secondary-button-hover-color: #0B24F5;
-  --tertiary-button-hover-color: #FFD338; 
+  --primary-button-hover-color: #94b647;
+  --secondary-button-hover-color: #b2cee5;
+  --tertiary-button-hover-color: #ffba1d; 
  
-  --icon-color: #D0D0D0;
+  --icon-color: #a09d9d;
   
   --icon-hover-color: #000000;   
 

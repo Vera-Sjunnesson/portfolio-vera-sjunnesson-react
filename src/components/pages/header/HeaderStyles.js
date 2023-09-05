@@ -9,7 +9,7 @@ export const HeaderWrap = styled.header`
   padding-bottom: 0;
   margin-bottom: 50px;
   position: relative;
-  background-color: #fffdfb;
+  background-color: var(--primary-color);
 
   @media (min-width: 744px) and (max-width: 1280px) {
     padding: 0;
@@ -28,11 +28,9 @@ export const HeaderWrap = styled.header`
 `
 
 export const HeaderTextBlock = styled.div`
-
   display: contents;
   z-index: 1001;
   background-color: transparent;
-
 
   @media (min-width: 744px) and (max-width: 1280px) {
     display: block;
@@ -65,10 +63,10 @@ export const HeaderImgBlock = styled.div`
 `
 
 export const HeaderFeatureImg = styled.img`
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 `
 
 export const PresentationCard = styled.div`
@@ -154,8 +152,9 @@ export const HeaderTitles = styled.div`
     align-self: center;
     margin-bottom: 0px;
   }
+  
   @media (min-width: 1280px) {
-    background-color: #fffdfb;
+    background-color: var(--primary-color);
     padding: 2px 5px;
   }
 `
