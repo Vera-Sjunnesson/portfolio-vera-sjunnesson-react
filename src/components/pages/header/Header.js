@@ -22,7 +22,7 @@ export const Header = ({ headerRef }) => {
           <Title />
           <HeaderText>
             {/* eslint-disable-next-line max-len */}
-            I&apos;m a React developer and designer seeking opportunities within the tech industry. I thrive on challenging projects, embrace new technologies, and bring a unique perspective thanks to my background in film and visual art. With experience in roles such as a graphic designer, art department creative, and scriptwriter in both the United States and Sweden, I&apos;ve developed valuable skills in collaboration, adaptability, and creativity.
+            I&apos;m a React developer and designer seeking opportunities within the tech industry. I thrive on challenging projects, embrace new technologies, and bring a unique perspective thanks to my background in film and visual art. With experience in roles such as a graphic designer, art department creative, and scriptwriter in both the United States and Sweden, I&apos;ve developed valuable skills in collaboration, adaptability and creativity.
           </HeaderText>
           <HeaderText>
             {/* eslint-disable-next-line max-len */}
