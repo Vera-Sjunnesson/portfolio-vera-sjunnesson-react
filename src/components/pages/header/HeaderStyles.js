@@ -116,7 +116,6 @@ export const TitleCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     gap: 29px;
-    width: 496px;
     align-self: flex-start;
     margin-bottom: 32px;
   }

@@ -26,7 +26,7 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/todo-app.png`}
           imgAlt="To do app"
-          projectTitle="The To Do App"
+          projectTitle="Todo App in React Redux"
           projectDescription="An organizational to do-app built in React using Redux. The user can add, delete, prioritize and check off tasks and categorize them in projects."
           listItems={[
             { key: 1, text: 'React' },
@@ -41,7 +41,7 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/labyrinth-project.png`}
           imgAlt="Labyrinth game"
-          projectTitle="Labyrinth Game"
+          projectTitle="Labyrinth Game API"
           projectDescription="Can you navigate your way out of the space maze? This game app is built with React and Redux and connects to an API that provides the positions of the labyrinth."
           listItems={[
             { key: 1, text: 'React' },
@@ -57,7 +57,7 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/survey-project.png`}
           imgAlt="Survey App starter page"
-          projectTitle="Survey App built in React"
+          projectTitle="Survey App with React"
           projectDescription="A film generator where the user gets to answer a series of questions about their cinema preferences and gets recommended a handpicked favorite of mine from a custom database."
           listItems={[
             { key: 1, text: 'React' },
@@ -84,7 +84,7 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/movie-globe-02.png`}
           imgAlt="Laptop displaying Movie Globe app"
-          projectTitle="The Movie Globe - Backend and frontend"
+          projectTitle="Movie Globe - Backend and Frontend"
           projectDescription="An interactive movie map that lets the user travel the world through movie locations. Each pin represent a location of a key scene from a movie in our curated database.  New locations can be added, commented on and saved by registered users. Backend and frontend work in this collaboration with Jonas Jakobson."
           listItems={[
             { key: 1, text: 'React' },
@@ -97,9 +97,23 @@ export const Projects = ({ projectsRef }) => {
           githubLink="https://github.com/Vera-Sjunnesson/movie-globe-backend"
           liveLink="https://movie-globe.netlify.app/" />
         <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/authentification.png`}
+          imgAlt="Authentication Project"
+          projectTitle="Authentication Project"
+          projectDescription="Authentication project where a user can create an account, post messages to their user and sign in and out."
+          listItems={[
+            { key: 1, text: 'React' },
+            { key: 8, text: 'Node.js' },
+            { key: 9, text: 'MongoDB' },
+            { key: 10, text: 'REST API' },
+            { key: 7, text: 'Mob-programming' }
+          ]}
+          githubLink="https://github.com/Vera-Sjunnesson/project-auth-vera"
+          liveLink="https://calm-custard-0d2bb8.netlify.app/" />
+        <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/movie-platform.png`}
-          imgAlt="Laptop displaying Movie app"
-          projectTitle="Movie Platform"
+          imgAlt="Laptop displaying Movie releases platform"
+          projectTitle="Movie Releases in React"
           projectDescription="A multi-page movie application using React Router and an API from The Movie Database. The user gets to explore details about popular movies from a selection of dynamic content based on one’s genre preferences."
           listItems={[
             { key: 1, text: 'React' },
@@ -114,14 +128,14 @@ export const Projects = ({ projectsRef }) => {
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/happy-thoughts-project-backend.png`}
           imgAlt="Laptop on desk displaying happy thoughts chatt app"
-          projectTitle="Happy Thoughts Project"
+          projectTitle="Happy Thoughts with MongoDB"
           projectDescription="A version of Twitter which only allows happy thoughts! This application uses React to both send and receive data from an API. In addition to writing their own messages, the user can see other users post and send likes."
           listItems={[
             { key: 1, text: 'React' },
             { key: 4, text: 'JavaScript' },
-            { key: 12, text: 'API' },
-            { key: 5, text: 'CSS' },
-            { key: 6, text: 'HTML' }
+            { key: 8, text: 'Node.js' },
+            { key: 9, text: 'MongoDB' },
+            { key: 10, text: 'REST API' }
           ]}
           githubLink="https://github.com/Technigo/project-happy-thoughts/pull/450"
           liveLink="https://happy-thoughts-vera-sjunnesson.netlify.app/" />
@@ -139,6 +153,18 @@ export const Projects = ({ projectsRef }) => {
           ]}
           githubLink="https://github.com/Technigo/project-weather-app/pull/294"
           liveLink="https://vera-matilda-weather-app.netlify.app/" />
+        <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/express-api.png`}
+          imgAlt="Express API"
+          projectTitle="Express API + React"
+          projectDescription="Search for all female artists in the the Museum of Modern Art New York collection!"
+          listItems={[
+            { key: 1, text: 'React' },
+            { key: 8, text: 'Node.js' },
+            { key: 10, text: 'REST API' }
+          ]}
+          githubLink="https://github.com/Vera-Sjunnesson/project-express-api"
+          liveLink="https://express-api-project-vera.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/guess-who.jpeg`}
           imgAlt="Tablet displaying the guess-who game"
