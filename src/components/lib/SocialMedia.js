@@ -8,6 +8,7 @@ export const SocialMediaCard = styled.div`
   gap: 30px;
   width: 100%;
   margin-bottom: 30px;
+  margin-top: 15px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 288px;

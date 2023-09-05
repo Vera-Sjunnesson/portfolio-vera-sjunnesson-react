@@ -22,7 +22,15 @@ export const Header = ({ headerRef }) => {
           <Title />
           <HeaderText>
             {/* eslint-disable-next-line max-len */}
-            A curious and creative frontend developer with a strong focus on the user experience and graphic design. With more than 7 years of experience in the film industry, working as an independent scriptwriter, art department creative, and graphic designer, I bring a unique visual perspective to my work. Having earned an MFA degree in film production from New York University and a degree in visual art from Konstfack, Stockholm, I approach any problem with an open and imaginative approach.
+            I&apos;m a React developer and designer seeking opportunities within the tech industry. I thrive on challenging projects, embrace new technologies, and bring a unique perspective thanks to my background in film and visual art. With experience in roles such as a graphic designer, art department creative, and scriptwriter in both the United States and Sweden, I&apos;ve developed valuable skills in collaboration, adaptability, and creativity.
+          </HeaderText>
+          <HeaderText>
+            {/* eslint-disable-next-line max-len */}
+            Having earned an MFA degree in film production from New York University and a degree in visual art from Konstfack, Stockholm, I approach any problem with an open and imaginative mindset.
+          </HeaderText>
+          <HeaderText>
+            {/* eslint-disable-next-line max-len */}
+            In my spare time, I develop projects that promote female representation in film and tango events.
           </HeaderText>
           <SocialMedia />
         </PresentationCard>

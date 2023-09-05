@@ -30,11 +30,12 @@ body, html {
     color: var(--secondary-headline-color);
   }
   
-  h1 span, h3 span {
+/*   h1 span, h2 span, h3 span {
     background-color: var(--primary-color);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-  }
+    padding: 2px 5px;
+  } */
   
   h4 {
     font-family: 'Satoshi-Black', sans-serif;
