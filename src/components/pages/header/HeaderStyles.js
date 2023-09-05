@@ -145,11 +145,9 @@ export const PortraitImg = styled.img`
 export const HeaderTitles = styled.div`
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   padding: 0px;
   box-sizing: border-box;
   width:100%;
-  margin-bottom: 37px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     margin: 0px;

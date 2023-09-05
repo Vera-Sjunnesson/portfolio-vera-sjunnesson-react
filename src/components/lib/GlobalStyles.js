@@ -30,9 +30,8 @@ body, html {
     color: var(--secondary-headline-color);
   }
   
-  h1 span, h2 span, h3 span {
+  h1 span, h3 span {
     background-color: var(--primary-color);
-    padding: 0px 7px;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
