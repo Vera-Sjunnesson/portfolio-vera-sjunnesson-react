@@ -6,8 +6,7 @@ export const Tech = ({ techRef }) => {
   return (
     <TechSection ref={techRef}>
       <Fade
-        duration={2000}
-        triggerOnce>
+        duration={2000}>
         <div>
           <TechHeading>
             Tech
