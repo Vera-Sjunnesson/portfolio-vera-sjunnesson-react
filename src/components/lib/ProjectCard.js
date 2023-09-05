@@ -186,24 +186,24 @@ export const ProjectCard = ({
   const [showText, setShowText] = useState(false)
   const [longText, setLongText] = useState(false)
   const descriptionRef = useRef(null);
-  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
-  const isTablet = useMediaQuery({ minWidth: 774, maxWidth: 1280 })
-  const isMobile = useMediaQuery({ query: '(min-width: 774px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 774px)' })
 
   useEffect(() => {
-    if (isDesktop || isTablet) {
-      if (!longText && descriptionRef.current.scrollHeight > 90) {
-        setLongText(true);
-        setShowText(true);
-      } else if (longText && descriptionRef.current.scrollHeight < 90) {
-        setLongText(false);
-        setShowText(false);
+    if (!descriptionRef.current) return;
+    const resizeObserver = new ResizeObserver(() => {
+      if (!isMobile) {
+        if (!longText && descriptionRef.current.scrollHeight > 90) {
+          setLongText(true);
+          setShowText(true);
+        } else if (longText && descriptionRef.current.scrollHeight < 90) {
+          setLongText(false);
+          setShowText(false);
+        }
       }
-    } else if (isMobile) {
-      setLongText(false);
-      setShowText(false);
-    }
-  }, [isDesktop, isMobile, isTablet, longText]);
+    });
+    resizeObserver.observe(descriptionRef.current);
+    return () => resizeObserver.disconnect(); // clean up
+  }, [isMobile, longText]);
 
   const toggleText = () => {
     setShowText(!showText);
@@ -224,12 +224,7 @@ export const ProjectCard = ({
             <Description $long={!showText} ref={descriptionRef}>
               {projectDescription}
             </Description>
-            {isDesktop && longText && (
-              <ShowMoreButton type="button" onClick={toggleText}>
-                {!showText ? 'Read Less' : 'Read More'}
-              </ShowMoreButton>
-            )}
-            {isTablet && longText && (
+            {longText && (
               <ShowMoreButton type="button" onClick={toggleText}>
                 {!showText ? 'Read Less' : 'Read More'}
               </ShowMoreButton>
