@@ -23,6 +23,10 @@ export const ArrowButtonStyled = styled.button`
     width: 70px;
     height: 70px;
   }
+
+  &:hover {
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.50);
+  }
 `
 
 // eslint-disable-next-line max-len

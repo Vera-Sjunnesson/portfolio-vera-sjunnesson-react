@@ -4,7 +4,7 @@ export const LineBackgroundBottom = () => {
   return (
     <div
       style={{ position: 'absolute',
-        bottom: '-4px',
+        bottom: '-1657px',
         right: '0px',
         overflowX: 'hidden',
         width: '1261px' }}>
