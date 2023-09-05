@@ -191,14 +191,12 @@ export const ProjectCard = ({
   useEffect(() => {
     if (!descriptionRef.current) return;
     const resizeObserver = new ResizeObserver(() => {
-      if (!isMobile) {
-        if (!longText && descriptionRef.current.scrollHeight > 90) {
-          setLongText(true);
-          setShowText(true);
-        } else if (longText && descriptionRef.current.scrollHeight < 90) {
-          setLongText(false);
-          setShowText(false);
-        }
+      if (!isMobile && !longText && descriptionRef.current.scrollHeight > 90) {
+        setLongText(true);
+        setShowText(true);
+      } else if (longText && descriptionRef.current.scrollHeight < 90) {
+        setLongText(false);
+        setShowText(false);
       }
     });
     resizeObserver.observe(descriptionRef.current);
