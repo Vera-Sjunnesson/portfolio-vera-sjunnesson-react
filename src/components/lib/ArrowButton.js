@@ -15,7 +15,7 @@ export const ArrowButtonStyled = styled.button`
   margin: auto;
   z-index: 999;
   padding: 0px;
-  background: #ffffff;
+  background: #fffdfb;
   box-shadow: 5px 5px 19px 0px rgba(0, 0, 0, 0.50);
   z-index: 1001;
 

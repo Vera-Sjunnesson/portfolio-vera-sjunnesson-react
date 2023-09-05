@@ -58,6 +58,8 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background: #fffdfb;
+  padding: 5px 10px;
 }
 `
 
@@ -140,8 +142,7 @@ export const ProjectButton = styled.button`
   color: #333333;
 
   &:hover {
-    color: var(--primary-color);
-    background-color: ${(props) => (props.$github ? '#1d8e4a' : 'var(--secondary-button-hover-color)')};
+    background-color: ${(props) => (props.$github ? '#94b647' : '#b2cee5')};
   }
 `
 

@@ -9,7 +9,7 @@ export const HeaderWrap = styled.header`
   padding-bottom: 0;
   margin-bottom: 50px;
   position: relative;
-  background-color: var(--primary-color);
+  background-color: #fffdfb;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     padding: 0;
@@ -75,10 +75,10 @@ export const PresentationCard = styled.div`
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 540px;
-    height: 567px;
+    height: 623px;
     position: absolute;
     left: calc(50% - 540px/2);
-    top: calc(50% - 567px/2);
+    top: calc(50% - 623px/2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -148,15 +148,19 @@ export const HeaderTitles = styled.div`
   padding: 0px;
   box-sizing: border-box;
   width:100%;
+  margin-bottom: 37px;
 
-  @media (min-width: 744px) and (max-width: 1280px) {
+  @media (min-width: 744px) {
     margin: 0px;
     align-self: center;
+    margin-bottom: 0px;
   }
 `
 export const HeaderText = styled.p`
   box-sizing: border-box;
   margin-bottom: 48px;
+  font-size: 25px;
+  line-height: 32px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 500px;

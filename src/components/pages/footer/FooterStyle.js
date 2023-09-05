@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 
 export const FooterSection = styled.footer`
     padding: 64px 22px 93px 22px;
+    background: #fffdfb;
     display: flex;
     flex-direction: column;
     gap: 56px;
@@ -73,7 +74,7 @@ export const EmailButton = styled.button`
     font-family: 'Satoshi-Bold', sans-serif;
     margin-bottom: 10px;
     &:hover {
-        background-color: var(--tertiary-button-hover-color);
+        background-color: #ffba1d;
         color: var(--secondary-color);
     }
 `

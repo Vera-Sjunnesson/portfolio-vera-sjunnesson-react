@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 export const ProjectSection = styled.section`
   padding: 64px 24px 93px 24px;
   position: relative;
+  background: #fffdfb;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     padding: 120px 24px;
@@ -10,7 +11,7 @@ export const ProjectSection = styled.section`
   }
 
   @media (min-width:1280px) and (max-width:1512px) {
-    padding: 120px 230px 92px 230px;
+    padding: 120px 220px 92px 220px;
     position: relative;
   }
 

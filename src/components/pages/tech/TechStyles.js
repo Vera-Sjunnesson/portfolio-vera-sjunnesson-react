@@ -27,11 +27,12 @@ export const TechSection = styled.section`
 
 export const TechHeading = styled.h4`
     font-size: 80px;
-    color: var(--primary-color)
+    color: #fffdfb;
 `
 
 export const TechText = styled.p`
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 40px;
     word-break: normal;
     padding: 0 24px;
     max-width: 327px;
@@ -48,6 +49,13 @@ export const TechText = styled.p`
         height: auto;
     }
 `
+
+export const TechTextSpan = styled.span`
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background: #fffdfb;
+    padding: 0px 5px 1px 5px;
+`;
 
 export const MarkGreen = styled.mark`
     padding-left: 2px;

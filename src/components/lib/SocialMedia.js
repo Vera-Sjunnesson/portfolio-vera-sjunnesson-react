@@ -27,7 +27,7 @@ export const SocialMediaCard = styled.div`
 `
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: var(--icon-color);
+  color: #a09d9d;
   font-size: 30px;
 
   &:hover {
