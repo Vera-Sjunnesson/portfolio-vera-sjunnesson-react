@@ -59,7 +59,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   background: #fffdfb;
-  padding: 5px 10px;
+  padding: 0px 10px;
 }
 `
 
