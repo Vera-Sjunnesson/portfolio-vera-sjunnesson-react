@@ -37,6 +37,7 @@ export const HeaderTextBlock = styled.div`
     width: 100%;
     height: 744px;
     position: relative;
+    background-color: var(--primary-color);
   }
 
   @media (min-width: 1280px) {
@@ -73,10 +74,10 @@ export const PresentationCard = styled.div`
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 540px;
-    height: 623px;
+    height: 667px;
     position: absolute;
     left: calc(50% - 540px/2);
-    top: calc(50% - 623px/2);
+    top: calc(50% - 667px/2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
