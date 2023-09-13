@@ -124,7 +124,6 @@ export const TitleCard = styled.div`
 export const PortraitCard = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 0px;
   width:100%;
