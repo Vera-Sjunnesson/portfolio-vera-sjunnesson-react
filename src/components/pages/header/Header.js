@@ -17,7 +17,7 @@ export const Header = ({ headerRef }) => {
       {isTablet && (
         <HeaderImgBlock>
           <HeaderFeatureImg
-            src="https://unsplash.com/photos/U2Ug1A6tQew"
+            src="https://i.postimg.cc/YC9Y0Bj3/the-sun.jpg"
             alt="abstract sun" />
         </HeaderImgBlock>
       )}
@@ -42,7 +42,7 @@ export const Header = ({ headerRef }) => {
       {isDesktop && (
         <HeaderImgBlock>
           <HeaderFeatureImg
-            src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`}
+            src="https://i.postimg.cc/YC9Y0Bj3/the-sun.jpg"
             alt="abstract sun" />
         </HeaderImgBlock>
       )}

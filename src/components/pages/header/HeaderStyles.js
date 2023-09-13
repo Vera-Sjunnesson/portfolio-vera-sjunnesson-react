@@ -50,7 +50,7 @@ export const HeaderTextBlock = styled.div`
 
 export const HeaderImgBlock = styled.div`
   position: relative;
-  background-color: var(--primary-container-color);
+  background-color: var(--primary-color);
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: 100%;
