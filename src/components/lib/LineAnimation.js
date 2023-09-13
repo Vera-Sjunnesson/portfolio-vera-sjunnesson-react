@@ -9,15 +9,15 @@ export const LineAnimation = () => {
       style={{
         position: 'absolute',
         top: '0px',
-        bottom: '0px',
         right: '0px',
-        zIndex: '999'
+        zIndex: '999',
+        height: '100vh'
       }}>
       <svg
-        width="1085"
-        height="1013"
+        className="svg-animation"
+        height="100%"
         viewBox="0 0 1085 1013"
-        fill="none"
+        fill="red"
         xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_1076_506)">
           <motion.path
@@ -40,8 +40,8 @@ export const LineAnimation = () => {
         <defs>
           <clipPath id="clip0_1076_506">
             <rect
-              width="1084.6"
-              height="1012.7"
+              width="100%"
+              height="100vw"
               fill="white" />
           </clipPath>
         </defs>

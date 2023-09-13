@@ -172,5 +172,6 @@ export const HeaderText = styled.p`
   @media (min-width: 1280px) {
     width: 500px;
     align-self: flex-end;
+    background: var(--primary-color);
   }
 `

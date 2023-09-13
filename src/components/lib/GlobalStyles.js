@@ -86,4 +86,9 @@ article img {
   width: 100%;
   object-fit: cover;
 }
+
+.svg-animation {
+  min-height: 100vh !important;
+  height: 100vh !important;
+}
 `
