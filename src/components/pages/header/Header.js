@@ -17,7 +17,7 @@ export const Header = ({ headerRef }) => {
       {isTablet && (
         <HeaderImgBlock>
           <HeaderFeatureImg
-            src={`${process.env.PUBLIC_URL}/images/the-sun.jpeg`}
+            src="https://unsplash.com/photos/U2Ug1A6tQew"
             alt="abstract sun" />
         </HeaderImgBlock>
       )}
