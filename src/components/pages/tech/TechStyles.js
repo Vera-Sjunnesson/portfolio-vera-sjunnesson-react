@@ -30,15 +30,17 @@ export const TechHeading = styled.h4`
 `
 
 export const TechText = styled.p`
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 28.71px;
   word-break: normal;
-  padding: 0 24px;
+  padding: 0 10px;
   max-width: 327px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     max-width: 531px;
     padding: 0;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   @media (min-width: 1280px) {
@@ -46,6 +48,8 @@ export const TechText = styled.p`
     padding: 0;
     margin: 0;
     height: auto;
+    font-size: 30px;
+    line-height: 40px;
   }
 `
 

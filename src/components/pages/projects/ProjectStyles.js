@@ -22,8 +22,18 @@ export const ProjectSection = styled.section`
 `
 
 export const ProjectHeading = styled.h4`
+  font-size: 50px;
+  line-height: 60px;
   margin-bottom: 64px;
-  font-weight: 900;
+
+  @media (min-width: 2880px) and (max-width: 350px) {
+    font-size: 55px;
+  }
+
+  @media (min-width: 350px) and (max-width: 744px) {
+    font-size: 72px;
+    line-height: 80px;
+  }
 
   @media (min-width: 744px) and (max-width: 1280px) {
     font-size: 80px;
