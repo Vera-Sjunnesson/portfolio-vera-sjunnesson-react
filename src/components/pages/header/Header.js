@@ -7,7 +7,7 @@ import { HeaderWrap, HeaderText, HeaderFeatureImg, PresentationCard, HeaderTextB
 
 export const Header = ({ headerRef }) => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
-  const isTablet = useMediaQuery({ minWidth: 774, maxWidth: 1280 })
+  const isTablet = useMediaQuery({ minWidth: 774, maxWidth: 1279 })
 
   return (
     <HeaderWrap ref={headerRef}>
@@ -19,6 +19,7 @@ export const Header = ({ headerRef }) => {
           <HeaderFeatureImg
             src="https://i.postimg.cc/YC9Y0Bj3/the-sun.jpg"
             alt="abstract sun" />
+          <LineAnimation />
         </HeaderImgBlock>
       )}
       <HeaderTextBlock>

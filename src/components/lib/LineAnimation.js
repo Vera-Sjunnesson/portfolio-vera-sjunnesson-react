@@ -1,21 +1,36 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import styled from 'styled-components/macro';
+
+export const LineContainer = styled.div`
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+
+  @media (min-width: 744px) and (max-width: 1279px) {
+    display: block;
+    right: auto;
+    left: 0px;
+    width: 100%;
+    height: 496px;
+    top: calc(50% - 496px/2);
+  }
+
+  @media (min-width: 1280px) {
+    display: block;
+    height: 100vh;
+  }
+`
 
 const transition = { duration: 4, yoyo: Infinity, ease: 'easeInOut' }
 
 export const LineAnimation = () => {
   return (
-    <div
-      style={{
-        position: 'absolute',
-        top: '0px',
-        right: '0px',
-        zIndex: '999',
-        height: '100vh'
-      }}>
+    <LineContainer>
       <svg
         className="svg-animation"
-        height="100%"
         viewBox="0 0 1085 1013"
         fill="red"
         xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +56,7 @@ export const LineAnimation = () => {
           <clipPath id="clip0_1076_506">
             <rect
               width="100%"
-              height="100vw"
+              height="100%"
               fill="white" />
           </clipPath>
         </defs>
@@ -51,6 +66,6 @@ export const LineAnimation = () => {
         initial={{ offsetDistance: '0%', scale: 2.5 }}
         animate={{ offsetDistance: '100%', scale: 1 }}
         transition={transition} />
-    </div>
+    </LineContainer>
   );
 }

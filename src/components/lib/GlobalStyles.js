@@ -90,5 +90,12 @@ article img {
 .svg-animation {
   min-height: 100vh !important;
   height: 100vh !important;
+
+  @media (min-width: 744px) and (max-width: 1279px) {
+    min-width: 120%!important;
+    width: 120%!important;
+    min-height: auto!important;
+    height: auto!important;
+  }
 }
 `

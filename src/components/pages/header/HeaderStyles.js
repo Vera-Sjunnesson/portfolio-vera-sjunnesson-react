@@ -17,6 +17,7 @@ export const HeaderWrap = styled.header`
     gap: 0;
     justify-content: flex-start;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   @media (min-width: 1280px) {
