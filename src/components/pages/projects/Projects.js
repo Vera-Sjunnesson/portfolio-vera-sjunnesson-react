@@ -1,20 +1,11 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
 import { ProjectCard } from 'components/lib/ProjectCard'
-import { LineBackground, LineBackgroundBottom } from 'components/lib/LineBackground';
 import { Fade } from 'react-awesome-reveal';
 import { ProjectSection, ProjectHeading, ProjectsWrapper } from './ProjectStyles'
 
 export const Projects = ({ projectsRef }) => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
   return (
     <ProjectSection ref={projectsRef}>
-      {isDesktop && (
-        <>
-          <LineBackground />
-          <LineBackgroundBottom />
-        </>
-      )}
       <Fade
         duration={2000}>
         <ProjectHeading>
