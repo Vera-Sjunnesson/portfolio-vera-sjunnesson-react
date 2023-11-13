@@ -26,7 +26,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-todos/pull/445"
+          githubLink="https://github.com/Vera-Sjunnesson/project-todos"
           liveLink="https://to-do-project-vera.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/labyrinth-project.png`}
@@ -55,7 +55,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-survey/pull/447"
+          githubLink="https://github.com/Vera-Sjunnesson/project-survey"
           liveLink="https://survey-project-vera-sjunnesson.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/design-handoff-project.jpg`}
