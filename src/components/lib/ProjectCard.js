@@ -243,15 +243,17 @@ export const ProjectCard = ({
             </TechList>
           </TextCard>
           <ProjectButtons>
-            <ProjectButton
-              $github
-              type="button"
-              onClick={() => window.open(githubLink)}>
-              <StyledFontAwesomeIcon
-                icon={faGithub}
-                aria-hidden="true" />
+            {githubLink && (
+              <ProjectButton
+                $github
+                type="button"
+                onClick={() => window.open(githubLink)}>
+                <StyledFontAwesomeIcon
+                  icon={faGithub}
+                  aria-hidden="true" />
                 View the code
-            </ProjectButton>
+              </ProjectButton>
+            )}
             <ProjectButton
               type="button"
               onClick={() => window.open(liveLink)}>

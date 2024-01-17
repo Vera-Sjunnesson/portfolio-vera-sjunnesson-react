@@ -14,6 +14,36 @@ export const Projects = ({ projectsRef }) => {
       </Fade>
       <ProjectsWrapper>
         <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/tango-norte2.png`}
+          imgAlt="Tango Norte Website"
+          projectTitle="Tango Norte Website"
+          projectDescription="Building and designing the landing page for the Swedish Argentinian Tango Association, Tango Norte."
+          listItems={[
+            { key: 1, text: 'React' },
+            { key: 15, text: 'React Router' },
+            { key: 12, text: 'API' },
+            { key: 3, text: 'Styled Components' },
+            { key: 16, text: 'PHP' },
+            { key: 4, text: 'JavaScript' },
+            { key: 19, text: 'UX Design' }
+          ]}
+          githubLink=""
+          liveLink="http://utv.reco.tangonorte.com" />
+        <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/square-docs.png`}
+          imgAlt="SquareDocs Design"
+          projectTitle="SquareDocs Design"
+          projectDescription="Recreation of an original design using Tailwind CSS, focusing on state management with Zustand and creating login functionalities."
+          listItems={[
+            { key: 1, text: 'React' },
+            { key: 17, text: 'Tailwind CSS' },
+            { key: 18, text: 'Zustand' },
+            { key: 20, text: 'React Hook Form' },
+            { key: 4, text: 'JavaScript' }
+          ]}
+          githubLink="https://github.com/Vera-Sjunnesson/wudpecker-task"
+          liveLink="https://wudpecker-task-vera.netlify.app/" />
+        <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/todo-app.png`}
           imgAlt="To do app"
           projectTitle="Todo App in React Redux"
@@ -29,6 +59,20 @@ export const Projects = ({ projectsRef }) => {
           githubLink="https://github.com/Vera-Sjunnesson/project-todos"
           liveLink="https://to-do-project-vera.netlify.app/" />
         <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/happy-thoughts-project-backend.png`}
+          imgAlt="Laptop on desk displaying happy thoughts chatt app"
+          projectTitle="Happy Thoughts with MongoDB"
+          projectDescription="A version of Twitter which only allows happy thoughts! This application uses React to both send and receive data from an API. In addition to writing their own messages, the user can see other users post and send likes."
+          listItems={[
+            { key: 1, text: 'React' },
+            { key: 4, text: 'JavaScript' },
+            { key: 8, text: 'Node.js' },
+            { key: 9, text: 'MongoDB' },
+            { key: 10, text: 'REST API' }
+          ]}
+          githubLink="https://github.com/Vera-Sjunnesson/project-happy-thoughts-api"
+          liveLink="https://happy-thoughts-vera-sjunnesson.netlify.app/" />
+        <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/labyrinth-project.png`}
           imgAlt="Labyrinth game"
           projectTitle="Labyrinth Game API"
@@ -42,7 +86,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-labyrinth/pull/194"
+          githubLink="https://github.com/Vera-Sjunnesson/project-labyrinth"
           liveLink="https://the-great-space-maze.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/survey-project.png`}
@@ -69,7 +113,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-design-handoff/pull/31"
+          githubLink="https://github.com/Vera-Sjunnesson/project-design-handoff"
           liveLink="https://project-design-handoff-verasjunnesson.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/movie-globe-02.png`}
@@ -107,28 +151,15 @@ export const Projects = ({ projectsRef }) => {
           projectDescription="A multi-page movie application using React Router and an API from The Movie Database. The user gets to explore details about popular movies from a selection of dynamic content based on one’s genre preferences."
           listItems={[
             { key: 1, text: 'React' },
+            { key: 15, text: 'React Router' },
             { key: 4, text: 'JavaScript' },
             { key: 12, text: 'API' },
             { key: 11, text: 'Pair-Programming' },
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-movies/pull/320"
+          githubLink="https://github.com/Vera-Sjunnesson/project-movies"
           liveLink="https://vsmovies.netlify.app/" />
-        <ProjectCard
-          imgSource={`${process.env.PUBLIC_URL}/images/happy-thoughts-project-backend.png`}
-          imgAlt="Laptop on desk displaying happy thoughts chatt app"
-          projectTitle="Happy Thoughts with MongoDB"
-          projectDescription="A version of Twitter which only allows happy thoughts! This application uses React to both send and receive data from an API. In addition to writing their own messages, the user can see other users post and send likes."
-          listItems={[
-            { key: 1, text: 'React' },
-            { key: 4, text: 'JavaScript' },
-            { key: 8, text: 'Node.js' },
-            { key: 9, text: 'MongoDB' },
-            { key: 10, text: 'REST API' }
-          ]}
-          githubLink="https://github.com/Technigo/project-happy-thoughts/pull/450"
-          liveLink="https://happy-thoughts-vera-sjunnesson.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/wearher.app.narrow.jpg`}
           imgAlt="Phone displaying the weather app"
@@ -141,7 +172,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-weather-app/pull/294"
+          githubLink="https://github.com/Vera-Sjunnesson/project-weather-app"
           liveLink="https://vera-matilda-weather-app.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/express-api.png`}
@@ -150,10 +181,12 @@ export const Projects = ({ projectsRef }) => {
           projectDescription="Search for all female artists in the the Museum of Modern Art New York collection!"
           listItems={[
             { key: 1, text: 'React' },
+            { key: 15, text: 'React Router' },
+            { key: 21, text: 'TypeScript' },
             { key: 8, text: 'Node.js' },
             { key: 10, text: 'REST API' }
           ]}
-          githubLink="https://github.com/Vera-Sjunnesson/project-express-api"
+          githubLink="https://github.com/Vera-Sjunnesson/female-artists-express-api-frontend"
           liveLink="https://express-api-project-vera.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/guess-who.jpeg`}
@@ -165,7 +198,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-guess-who/pull/304"
+          githubLink="https://github.com/Vera-Sjunnesson/project-guess-who"
           liveLink="https://effortless-ninja-f73289.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/business-site.jpg`}
@@ -178,7 +211,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 5, text: 'CSS' },
             { key: 6, text: 'HTML' }
           ]}
-          githubLink="https://github.com/Technigo/project-business-site/pull/328"
+          githubLink="https://github.com/Vera-Sjunnesson/project-business-site"
           liveLink="https://fluffy-kitsune-4c750d.netlify.app/" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/news-site.jpeg`}
@@ -191,7 +224,7 @@ export const Projects = ({ projectsRef }) => {
             { key: 13, text: 'Flexbox' },
             { key: 14, text: 'Grid' }
           ]}
-          githubLink="https://github.com/Technigo/project-news-site/pull/399"
+          githubLink="https://github.com/Vera-Sjunnesson/project-news-site"
           liveLink="https://spontaneous-otter-5c0599.netlify.app/" />
       </ProjectsWrapper>
     </ProjectSection>
