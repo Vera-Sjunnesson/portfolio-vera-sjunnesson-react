@@ -16,9 +16,9 @@ export const Tech = ({ techRef }) => {
           <TechTextSpan>
             HTML, CSS, Flexbox,&nbsp;
             <MarkGreen>JavaScript</MarkGreen>,&nbsp;
-            ES6, JSX,&nbsp;
+            TypeScript, ES6, JSX,&nbsp;
             <MarkRed>React</MarkRed>,
-            React Hooks, Redux, Node.js, MongoDB, Web&nbsp;Accessibly, API:s,&nbsp;
+            React Hooks, Redux, Zustand, Node.js, MongoDB, Web&nbsp;Accessibly, API:s,&nbsp;
             <MarkBlue>mob-programming</MarkBlue>,
             pair-programming, Github.
           </TechTextSpan>

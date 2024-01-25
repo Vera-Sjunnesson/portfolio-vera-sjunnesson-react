@@ -27,8 +27,8 @@ export const Projects = ({ projectsRef }) => {
             { key: 4, text: 'JavaScript' },
             { key: 19, text: 'UX Design' }
           ]}
-          githubLink=""
-          liveLink="http://utv.reco.tangonorte.com" />
+          githubLink="https://github.com/Vera-Sjunnesson/tango-norte"
+          liveLink="https://tango-norte.netlify.app" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/square-docs.png`}
           imgAlt="SquareDocs Design"

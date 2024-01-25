@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components/macro';
 import { useMediaQuery } from 'react-responsive'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFigma } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Fade } from 'react-awesome-reveal';
@@ -58,7 +58,7 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: var(--primary-color);
+    background: ${(props) => (props.$ux ? '' : 'var(--primary-color)')};
     padding: 0px 10px;
   }
 `
@@ -141,6 +141,7 @@ export const ProjectButton = styled.button`
   background-color: var(--button-color);
   color: #333333;
   width: ${(props) => (props.$github ? '200px' : '')};
+  padding: 10.5px 16px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
     width: fit-content;
@@ -181,7 +182,8 @@ export const ProjectCard = ({
   projectDescription,
   listItems = [],
   githubLink,
-  liveLink
+  liveLink,
+  isUx
 }) => {
   const [showText, setShowText] = useState(false)
   const [longText, setLongText] = useState(false)
@@ -223,7 +225,7 @@ export const ProjectCard = ({
             src={imgSource}
             alt={imgAlt} />
         </ImgContainer>
-        <TextWrapper>
+        <TextWrapper $ux={isUx}>
           <TextCard>
             <Header>{projectTitle}</Header>
             <Description $long={!showText} ref={descriptionRef}>
@@ -243,24 +245,22 @@ export const ProjectCard = ({
             </TechList>
           </TextCard>
           <ProjectButtons>
-            {githubLink && (
-              <ProjectButton
-                $github
-                type="button"
-                onClick={() => window.open(githubLink)}>
-                <StyledFontAwesomeIcon
-                  icon={faGithub}
-                  aria-hidden="true" />
-                View the code
-              </ProjectButton>
-            )}
+            <ProjectButton
+              $github
+              type="button"
+              onClick={() => window.open(githubLink)}>
+              <StyledFontAwesomeIcon
+                icon={isUx ? faFigma : faGithub}
+                aria-hidden="true" />
+              {isUx ? 'View process' : 'View the code'}
+            </ProjectButton>
             <ProjectButton
               type="button"
               onClick={() => window.open(liveLink)}>
               <StyledFontAwesomeIcon
-                icon={faGlobe}
+                icon={isUx ? faFigma : faGlobe}
                 aria-hidden="true" />
-                Live demo
+              {isUx ? 'View prototype' : 'Live demo'}
             </ProjectButton>
           </ProjectButtons>
         </TextWrapper>

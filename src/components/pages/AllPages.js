@@ -5,12 +5,14 @@ import { Projects } from 'components/pages/projects/Projects'
 import { Skills } from 'components/pages/skills/Skills'
 import { Footer } from 'components/pages/footer/Footer'
 import { ArrowButton } from 'components/lib/ArrowButton'
+import { UXProjects } from './ux-projects/UXProjects'
 
 export const AllPages = () => {
   const [isOnScreen, setIsOnScreen] = useState(null);
   const [atBottom, setAtBottom] = useState(false);
 
   const sectionsRefs = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -54,13 +56,13 @@ export const AllPages = () => {
     });
 
     // closestIndex now contains the index of the ref with the closest rect.top to 0
-    if (closestIndex !== -1 && closestIndex < 4) {
+    if (closestIndex !== -1 && closestIndex < 5) {
       setIsOnScreen(closestIndex);
       window.scrollTo({
         top: sectionsRefs[closestIndex + 1].current.offsetTop,
         behavior: 'smooth'
       });
-    } else if (closestIndex === 4) {
+    } else if (closestIndex === 5) {
       setIsOnScreen(0);
       window.scrollTo({
         top: sectionsRefs[0].current.offsetTop,
@@ -83,8 +85,9 @@ export const AllPages = () => {
       <Header headerRef={sectionsRefs[0]} />
       <Tech techRef={sectionsRefs[1]} />
       <Projects projectsRef={sectionsRefs[2]} />
-      <Skills skillsRef={sectionsRefs[3]} />
-      <Footer footerRef={sectionsRefs[4]} />
+      <UXProjects uxprojectsRef={sectionsRefs[3]} />
+      <Skills skillsRef={sectionsRefs[4]} />
+      <Footer footerRef={sectionsRefs[5]} />
       <ArrowButton handleScrollToNextSection={handleScrollToNextSection} atBottom={atBottom} />
     </>
   )

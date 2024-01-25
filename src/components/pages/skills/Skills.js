@@ -2,6 +2,10 @@ import React from 'react'
 import { SkillList } from 'components/lib/SkillList'
 import { Fade } from 'react-awesome-reveal';
 import { SkillSection, SkillsHeader, SkillsContainer } from './SkillsStyle'
+import code from '../../data/code.json'
+import toolbox from '../../data/toolbox.json'
+import more from '../../data/more.json'
+import upcoming from '../../data/upcoming.json'
 
 export const Skills = ({ skillsRef }) => {
   return (
@@ -14,50 +18,21 @@ export const Skills = ({ skillsRef }) => {
         duration={2000}>
         <SkillsContainer>
           <SkillList
+            data={code}
             skillTitle="Code"
-            inputColor="#94b647"
-            skillItems={[
-              { key: 1, text: 'HTML5' },
-              { key: 2, text: 'CSS3' },
-              { key: 3, text: 'Javascript ES6' },
-              { key: 4, text: 'React.js' },
-              { key: 5, text: 'Styled Components' },
-              { key: 6, text: 'Redux' },
-              { key: 7, text: 'React Native' },
-              { key: 8, text: 'Node.js' },
-              { key: 9, text: 'REST API:s' },
-              { key: 10, text: 'MongoDB' }
-            ]} />
+            inputColor="#94b647" />
           <SkillList
+            data={toolbox}
             skillTitle="Toolbox"
-            inputColor="#ffba1d"
-            skillItems={[
-              { key: 11, text: 'Git' },
-              { key: 12, text: 'VSCode' },
-              { key: 13, text: 'Postman' },
-              { key: 14, text: 'GitHub' },
-              { key: 15, text: 'Figma / FigJam' },
-              { key: 16, text: 'Adobe Creative Suite' },
-              { key: 17, text: 'Slack' }
-            ]} />
+            inputColor="#ffba1d" />
           <SkillList
+            data={more}
             skillTitle="More"
-            inputColor="#b2cee5"
-            skillItems={[
-              { key: 18, text: 'Web Accessibility' },
-              { key: 19, text: 'Agile methodology' },
-              { key: 20, text: 'UX / UI Design' },
-              { key: 21, text: 'Graphic Design' },
-              { key: 22, text: 'Video Editing' },
-              { key: 23, text: 'Concept Development' }
-            ]} />
+            inputColor="#b2cee5" />
           <SkillList
+            data={upcoming}
             skillTitle="Upcoming"
-            inputColor="#febfcb"
-            skillItems={[
-              { key: 24, text: 'TypeScript' },
-              { key: 25, text: 'Angular' }
-            ]} />
+            inputColor="#febfcb" />
         </SkillsContainer>
       </Fade>
     </SkillSection>

@@ -1,0 +1,54 @@
+[
+  { 
+    "id": 1,
+    "type": "HTML5" 
+  },
+  { 
+    "id": 2, 
+    "type": "CSS3" 
+  },
+  { 
+    "id": 3,
+    "type": "Tailwind CSS" 
+  },
+  { 
+    "id": 4, 
+    "type": "Javascript ES6" 
+  },
+  { 
+    "id": 5,
+    "type": "TypeScript"
+  },
+  { 
+    "id": 6,
+     "type": "React" 
+  },
+  { 
+    "id": 7,
+    "type": "Styled Components" 
+  },
+  { 
+    "id": 8,
+    "type": "Redux"
+  },
+  {
+    "id": 9,
+    "type": "Zustand"
+  },
+  { 
+    "id": 10,
+    "type": "React Native"
+  },
+  { 
+    "id": 11, 
+    "type": "Node.js"
+  },
+  { 
+    "id": 12,
+    "type": "REST API:s"
+  },
+  { 
+    "id": 13,
+    "type": "MongoDB"
+  }
+]

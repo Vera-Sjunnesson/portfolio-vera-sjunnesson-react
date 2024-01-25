@@ -44,17 +44,17 @@ export const SkillItemSpan = styled.span`
   }
 `
 
-export const SkillList = ({ skillTitle, inputColor, skillItems = [] }) => {
+export const SkillList = ({ data, skillTitle, inputColor = [] }) => {
   return (
     <SkillSection>
       <ListHeading $inputcolor={inputColor}>
         {skillTitle}
       </ListHeading>
       <ul>
-        {skillItems.map((skillItem) => (
-          <SkillItem key={skillItem.key}>
+        {data.map((skillItem) => (
+          <SkillItem key={skillItem.id}>
             <SkillItemSpan>
-              {skillItem.text}
+              {skillItem.type}
             </SkillItemSpan>
           </SkillItem>
         ))}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "type": "Git" 
+  },
+  {
+    "id": 2,
+    "type": "VSCode"
+  },
+  { 
+    "id": 3,
+    "type": "Postman"
+  },
+  { 
+    "id": 4,
+    "type": "GitHub"
+  },
+  { 
+    "id": 5,
+    "type": "GitLab"
+  },
+  { 
+    "id": 6,
+    "type": "Figma / FigJam"
+  },
+  { 
+    "id": 7,
+    "type": "Adobe Creative Suite"
+  },
+  { 
+    "id": 8,
+    "type": "Slack"
+  }
+]
