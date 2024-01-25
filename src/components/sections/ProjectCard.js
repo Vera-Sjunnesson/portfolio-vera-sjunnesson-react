@@ -140,7 +140,7 @@ export const ProjectButtons = styled.div`
 export const ProjectButton = styled.button`
   background-color: var(--button-color);
   color: #333333;
-  width: ${(props) => (props.$github ? '200px' : '')};
+  width: ${(props) => (props.$github ? '204px' : '')};
   padding: 10.5px 16px;
 
   @media (min-width: 744px) and (max-width: 1280px) {
