@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectCard } from 'components/lib/ProjectCard'
+import { ProjectCard } from 'components/sections/ProjectCard'
 import { Fade } from 'react-awesome-reveal';
 import { ProjectSection, ProjectHeading, ProjectsWrapper } from './UXProjectsStyles'
 

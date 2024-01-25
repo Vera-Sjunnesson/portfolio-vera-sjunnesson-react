@@ -4,7 +4,7 @@ import { Tech } from 'components/pages/tech/Tech'
 import { Projects } from 'components/pages/projects/Projects'
 import { Skills } from 'components/pages/skills/Skills'
 import { Footer } from 'components/pages/footer/Footer'
-import { ArrowButton } from 'components/lib/ArrowButton'
+import { ArrowButton } from 'components/sections/ArrowButton'
 import { UXProjects } from './ux-projects/UXProjects'
 
 export const AllPages = () => {
@@ -72,7 +72,6 @@ export const AllPages = () => {
   };
 
   useEffect(() => {
-    console.log('isOnScreen', isOnScreen);
   }, [isOnScreen]);
 
   window.onbeforeunload = () => {

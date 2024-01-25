@@ -1,5 +1,5 @@
 import React from 'react'
-import { GlobalStyles } from 'components/lib/GlobalStyles'
+import { GlobalStyles } from 'styles/GlobalStyles'
 import { AllPages } from 'components/pages/AllPages'
 
 export const App = () => {

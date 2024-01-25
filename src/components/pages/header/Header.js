@@ -1,8 +1,8 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { Title } from 'components/lib/Title'
-import { LineAnimation } from 'components/lib/LineAnimation'
-import { SocialMedia } from '../../lib/SocialMedia'
+import { Title } from 'components/sections/Title'
+import { LineAnimation } from 'components/sections/LineAnimation'
+import { SocialMedia } from '../../sections/SocialMedia'
 import { HeaderWrap, HeaderText, HeaderFeatureImg, PresentationCard, HeaderTextBlock, HeaderImgBlock } from './HeaderStyles'
 
 export const Header = ({ headerRef }) => {

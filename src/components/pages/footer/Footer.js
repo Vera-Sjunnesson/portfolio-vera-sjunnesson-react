@@ -1,9 +1,9 @@
 import React from 'react'
 import { Fade } from 'react-awesome-reveal';
-import { Title } from 'components/lib/Title'
+import { Title } from 'components/sections/Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { SocialMedia } from 'components/lib/SocialMedia'
+import { SocialMedia } from 'components/sections/SocialMedia'
 import { FooterSection, FooterHeader, FooterContainer, FooterAddress, EmailButton, PhoneNumber } from './FooterStyle'
 
 export const Footer = ({ footerRef }) => {

@@ -1,26 +1,26 @@
 [
   { 
-    "id": 1,
+    "id": 22,
     "type": "Web Accessibility"
   },
   { 
-    "id": 2,
+    "id": 23,
     "type": "Agile methodology"
   },
   {
-    "id": 3,
+    "id": 24,
     "type": "UX / UI Design"
   },
   {
-    "id": 4,
+    "id": 25,
     "type": "Graphic Design"
   },
   {
-    "id": 5,
+    "id": 26,
     "type": "Video Editing"
   },
   {
-    "id": 6,
+    "id": 28,
     "type": "Concept Development" 
   }
 ]

@@ -1,11 +1,11 @@
 import React from 'react'
-import { SkillList } from 'components/lib/SkillList'
+import { SkillList } from 'components/sections/SkillList'
 import { Fade } from 'react-awesome-reveal';
 import { SkillSection, SkillsHeader, SkillsContainer } from './SkillsStyle'
-import code from '../../data/code.json'
-import toolbox from '../../data/toolbox.json'
-import more from '../../data/more.json'
-import upcoming from '../../data/upcoming.json'
+import code from '../../../data/code'
+import toolbox from '../../../data/toolbox'
+import more from '../../../data/more'
+import upcoming from '../../../data/upcoming'
 
 export const Skills = ({ skillsRef }) => {
   return (
