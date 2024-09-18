@@ -245,15 +245,17 @@ export const ProjectCard = ({
             </TechList>
           </TextCard>
           <ProjectButtons>
-            <ProjectButton
-              $github
-              type="button"
-              onClick={() => window.open(githubLink)}>
-              <StyledFontAwesomeIcon
-                icon={isUx ? faFigma : faGithub}
-                aria-hidden="true" />
-              {isUx ? 'View process' : 'View the code'}
-            </ProjectButton>
+            {githubLink && (
+              <ProjectButton
+                $github
+                type="button"
+                onClick={() => window.open(githubLink)}>
+                <StyledFontAwesomeIcon
+                  icon={isUx ? faFigma : faGithub}
+                  aria-hidden="true" />
+                {isUx ? 'View process' : 'View the code'}
+              </ProjectButton>
+            )}
             <ProjectButton
               type="button"
               onClick={() => window.open(liveLink)}>

@@ -14,21 +14,33 @@ export const Projects = ({ projectsRef }) => {
       </Fade>
       <ProjectsWrapper>
         <ProjectCard
-          imgSource={`${process.env.PUBLIC_URL}/images/tango-norte2.png`}
+          imgSource={`${process.env.PUBLIC_URL}/images/tango-norte.jpg`}
           imgAlt="Tango Norte Website"
           projectTitle="Tango Norte Website"
-          projectDescription="Building and designing the landing page for the Swedish Argentinian Tango Association, Tango Norte."
+          projectDescription="Commissioned by the Swedish-Argentinian Tango Association, Tango Norte, to build their website, developing and integrating APIs to present events, news, venues, and more in a user-friendly way."
           listItems={[
-            { key: 1, text: 'React' },
+            { key: 21, text: 'React.js / Vite' },
+            { key: 4, text: 'JavaScript' },
             { key: 15, text: 'React Router' },
             { key: 12, text: 'API' },
-            { key: 3, text: 'Styled Components' },
             { key: 16, text: 'PHP' },
-            { key: 4, text: 'JavaScript' },
+            { key: 3, text: 'Styled Components' },
             { key: 19, text: 'UX Design' }
           ]}
-          githubLink="https://github.com/Vera-Sjunnesson/tango-norte"
-          liveLink="https://tango-norte.netlify.app" />
+          liveLink="https://www.tangonorte.com" />
+        <ProjectCard
+          imgSource={`${process.env.PUBLIC_URL}/images/iwona-strojwas.jpg`}
+          imgAlt="Iwona Strojwas Website"
+          projectTitle="Iwona Strojwas Website"
+          projectDescription="From visual concept to the development of a complete website for social pedagogue and licensed psychotherapist Iwona Strojwas' practice."
+          listItems={[
+            { key: 21, text: 'React.js / Vite' },
+            { key: 12, text: 'TypeScript' },
+            { key: 20, text: 'Tailwind CSS' },
+            { key: 15, text: 'React Router' },
+            { key: 19, text: 'UX Design' }
+          ]}
+          liveLink="https://iwonastrojwas.netlify.app" />
         <ProjectCard
           imgSource={`${process.env.PUBLIC_URL}/images/square-docs.png`}
           imgAlt="SquareDocs Design"

@@ -17,7 +17,7 @@ export const Footer = ({ footerRef }) => {
       <Fade
         duration={2000}>
         <FooterHeader>
-          Time to talk
+          Contact
         </FooterHeader>
         <FooterContainer>
           <Title />
